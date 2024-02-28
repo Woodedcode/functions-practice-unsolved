@@ -9,13 +9,8 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
-}
+const splitFirstAndLastNames = (str) => str.split(' ');
 
-
-const result = splitFirstAndLastNames('John Smith');
-console.log(result)
 
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
@@ -23,12 +18,8 @@ console.log(result)
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
-  return personObject.age;
-}
+const personAge = (personObject) => personObject.age;
 
-const result = personAge({id: 1, name: 'Bob', age: 32})
-console.log(result)
 
 
 /** =========================
@@ -38,12 +29,7 @@ console.log(result)
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
-  return arr.includes(name);
-}
-
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'Michael')); 
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'James'));
+const isNameInArray = (arr, name) => arr.includes(name);
 
 
 
@@ -54,9 +40,9 @@ console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'James'));
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
     } else {
@@ -81,3 +67,4 @@ const f = {
   logSecondsUpToMax: logSecondsUpToMax || undefined,
 }
 export { f }
+
