@@ -12,28 +12,17 @@
 
 // Your function code starts here...
 function rectArea(sideA,sideB) {
-  return sideA * sideB
+  return sideA * sideB;
 }
-rectArea(3,2)
 
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-function rectArea(sideA,sideB) {
-  return sideA * sideB
-}
 const room1 = rectArea(4,6);
 const room2 = rectArea(13,3);
 const room3 = rectArea(4,8);
-
-console.log('Area of room1:', room1);
-console.log('Area of room2:', room2);
-console.log('Area of room3:', room3);
-
-
-
 
 /**
  * =============================================================
@@ -46,24 +35,16 @@ console.log('Area of room3:', room3);
  */
 
 // Your code goes here...
-function totalRoomsArea() {
-  return area1 + area2 + area3
+function totalRoomsArea(roomArea1, roomArea2, roomArea3) {
+  return roomArea1 + roomArea2 + roomArea3
 }
-
-const totalArea = totalRoomsArea(24, 35, 24)
-console.log(totalArea)
 
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
-function totalRoomsArea(area1, area2, area3) {
-  return area1 + area2 + area3;
+const result = function () {
+  console.log(totalRoomsArea(room1, room2, room3));
 }
-
-const room1 = rectArea(4,6);
-const room2 = rectArea(13,3);
-const room3 = rectArea(4,8);
-
 
 
 
