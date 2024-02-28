@@ -18,7 +18,6 @@ function logMessage() {
   console.log('Hello, World!');
 }
 
-logMessage();
 
 /**
  * =============================================================
@@ -33,10 +32,9 @@ logMessage();
 
 // Your code goes here...
 
-function logMyMessage() {
+function logMyMessage(logMyMessage) {
   console.log(logMyMessage);
 }
-logMyMessage('I log my first message!')
 
 
 /**
@@ -51,10 +49,8 @@ logMyMessage('I log my first message!')
 
 // Your code goes here...
 function logMessageWithMyName(name) {
-  console.log(`My name is ${name}`)
+  console.log(`My name is ${name}!`)
 }
-
-logMessageWithMyName('Ryan')
 
 
 
@@ -73,10 +69,8 @@ logMessageWithMyName('Ryan')
 // Your code goes here...
 
 function logMyInfo(name, age) {
-  console.log(`My name is ${anme}. I am ${age} years old!`)
+  console.log(`My name is ${name}. I am ${age} years old!`)
 }
-
-logMyInfo('Ryan', 34)
 
 
 // === TEST YOURSELF ===
@@ -86,4 +80,12 @@ logMyInfo('Ryan', 34)
 
 
 // Do not delete or change the lines beneath
+const f = {
+  logMessage: logMessage || undefined,
+  logMyMessage: logMyMessage || undefined,
+  logMessageWithMyName: logMessageWithMyName || undefined,
+  logMyInfo: logMyInfo || undefined
+};
+
+export { f }
 
