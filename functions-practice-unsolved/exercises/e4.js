@@ -67,4 +67,3 @@ const f = {
   logSecondsUpToMax: logSecondsUpToMax || undefined,
 }
 export { f }
-
