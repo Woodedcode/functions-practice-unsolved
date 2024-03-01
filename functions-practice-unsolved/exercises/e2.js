@@ -62,3 +62,4 @@ const f = {
     result: (room1 && room2 && room3) ? result : undefined,
 }
 export { f };
+
